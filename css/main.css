@@ -259,6 +259,7 @@ input {
 }
 
 .static-list {
+    position: relative;
     padding-left: 0;
     list-style-type: none;
     display: -webkit-box;
@@ -267,6 +268,15 @@ input {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+
+.static-list::before {
+    position: absolute;
+    background-image: url("../img/static-bg.png");
+    content: "";
+    width: 1110px;
+    height: 8px;
+    top: 150px;
 }
 
 .static-item {
